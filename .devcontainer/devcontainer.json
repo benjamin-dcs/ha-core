@@ -7,6 +7,12 @@
   "containerEnv": {
     "PYTHONASYNCIODEBUG": "1"
   },
+  "mounts": [
+    // File++
+    "source=/Users/jelmerwouters/Documents/GitHub/file-plusplus/custom_components/file_plusplus,target=${containerWorkspaceFolder}/config/custom_components/file-plusplus,type=bind",
+    // Itho
+    "source=/Users/jelmerwouters/Documents/GitHub/haithowifi/custom_components/ithodaalderop,target=${containerWorkspaceFolder}/config/custom_components/ithodaalderop,type=bind"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
